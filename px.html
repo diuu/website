@@ -1,0 +1,1380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>培训管理</title>
+    <link rel="shortcut icon" href="../website/yinlong.svg" />
+    <link rel="stylesheet" href="../website/css/iconfont.css">
+    <!--<link rel="stylesheet" href="/plug-in/normalize.css">-->
+    <link rel="stylesheet" href="../website/css/style.css">
+    <link rel="shortcut icon" href="../website/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <aside class="left-bar" id="leftBar">
+            <div class="title">
+                <p><i>SCJH</i></p>
+            </div>
+            <nav class="nav">
+                <div class="item active"><a href=""><i class="iconfont icon-daohang2"></i>Training</a><i class="line"></i></div>
+                <ul class="nav-item" id="navItem" style="grid-auto-flow:row;">
+                    <!-- 培训板块的 -->
+                    <li><a href="#system" class="active"><i class="iconfont icon-shequ"></i>企业系统</a></li>
+                    <li><a href="#systemTest" class="active"><i class="iconfont icon-shequ"></i>测试系统</a></li>
+                    <li><a href="#pxjh"><i class="iconfont icon-shequ"></i>培训计划</a></li>
+                    <li><a href="#gsgl"><i class="iconfont icon-shequ"></i>公司管理制度</a></li>
+                    <li><a href="#bmgl"><i class="iconfont icon-xuexi1"></i>部门管理制度</a></li>
+                    <li><a href="#xzxh"><i class="iconfont icon-blogger"></i>需知需会</a></li>
+                    <li><a href="#kq"><i class="iconfont icon-wendangdocument78"></i>考勤管理</a></li>
+                    <li><a href="#cyrj"><i class="iconfont icon-tool"></i>常用软件操作</a></li>
+                    <li><a href="#aq"><i class="iconfont icon-designer"></i>安全培训</a></li>
+                    <li><a href="#cp"><i class="iconfont icon-designer"></i>产品简介</a></li>
+                    <li><a href="#bm"><i class="iconfont icon-designer"></i>编码培训</a></li>   
+                    <li><a href="#gl"><i class="iconfont icon-designer"></i>管理培训</a></li>                 
+                    <li><a href="#xtcz"><i class="iconfont icon-designer"></i>系统操作培训</a></li>
+                    <!--
+                    <li><a href="#jxgl"><i class="iconfont icon-yunying"></i>绩效管理</a></li>
+                    <li><a href="#webtool"><i class="iconfont icon-designer"></i>软件官网</a></li>
+                    <li><a href="#project"><i class="iconfont icon-designer"></i>项目管理</a></li>
+                     <li><a href="#report"><i class="iconfont icon-xuexi1"></i>报表</a></li>
+                    <li><a href="#outSystem"><i class="iconfont icon-designer"></i>开源项目</a></li>
+                    <li><a href="#happy"><i class="iconfont icon-designer"></i>娱乐站点</a></li>
+                    <li><a href="#movies"><i class="iconfont icon-designer"></i>影视音乐必备</a></li>
+                    <li><a href="#mine"><i class="iconfont icon-designer"></i>个人站点</a></li>
+                    <li><a href="#friends"><i class="iconfont icon-designer"></i>友人站</a></li>
+                    <li><a href="#secret"><i class="iconfont Iconfont-阿里巴巴矢量图标库"></i>密语</a></li>
+                    <li><a href="#black"><i class="iconfont Iconfont-阿里巴巴矢量图标库"></i>黑站</a></li>
+                    <li class="#download"><a href=""><i class="iconfont icon-github"></i>源码下载</a></li> -->
+
+                    <!-- 培训板块不用的 -->
+                    <!-- <li><a href="#system" class="active"><i class="iconfont icon-shequ"></i>企业系统</a></li>
+                    <li><a href="#systemTest" class="active"><i class="iconfont icon-shequ"></i>测试系统</a></li>
+                    <li><a href="#bbs"><i class="iconfont icon-shequ"></i>开发社区</a></li>
+                    <li><a href="#study"><i class="iconfont icon-xuexi1"></i>学无止境</a></li>
+                    <li><a href="#sill"><i class="iconfont icon-blogger"></i>技术博客</a></li>
+                    <li><a href="#docs"><i class="iconfont icon-wendangdocument78"></i>参考文档</a></li>
+                    <li><a href="#tools"><i class="iconfont icon-tool"></i>实用工具</a></li>
+                    <li><a href="#design"><i class="iconfont icon-designer"></i>设计资源</a></li>
+                    <li><a href="#operation"><i class="iconfont icon-yunying"></i>网络运营</a></li>
+                    <li><a href="#userful"><i class="iconfont icon-designer"></i>常用站点</a></li>
+                    <li><a href="#webtool"><i class="iconfont icon-designer"></i>软件官网</a></li>
+                    <li><a href="#outSystem"><i class="iconfont icon-designer"></i>开源项目</a></li>
+                    <li><a href="#happy"><i class="iconfont icon-designer"></i>娱乐站点</a></li>
+                    <li><a href="#friends"><i class="iconfont icon-designer"></i>友人站</a></li>-->
+
+                    <!-- 暂时都不用的 -->
+                    <!-- <li><a href="#movies"><i class="iconfont icon-designer"></i>影视音乐必备</a></li>
+                    <li><a href="#mine"><i class="iconfont icon-designer"></i>个人站点</a></li>
+                    <li><a href="#report"><i class="iconfont icon-xuexi1"></i>报表</a></li>
+                    <li><a href="#project"><i class="iconfont icon-designer"></i>项目管理</a></li>
+                    <li><a href="#secret"><i class="iconfont Iconfont-阿里巴巴矢量图标库"></i>密语</a></li>
+                    <li><a href="#black"><i class="iconfont Iconfont-阿里巴巴矢量图标库"></i>黑站</a></li>
+                    <li class="#download"><a href=""><i class="iconfont icon-github"></i>源码下载</a></li> -->
+                </ul>
+
+                <!-- <div class="item comment"><a target="_blank" href="javascript:void(0)"><i class="iconfont icon-liuyan"></i>留言</a></div> -->
+            </nav>
+        </aside>
+        <section class="main">
+            <div id="mainContent">
+                <!-- 手机端菜单 -->
+                <div id="menu-box">
+                    <div id="menu">
+                        <input type="checkbox" id="menu-form">
+                        <label for="menu-form" class="menu-spin">
+                        <div class="line diagonal line-1"></div>
+                        <div class="line horizontal"></div>
+                        <div class="line diagonal line-2"></div>
+                      </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 企业系统 -->
+            <div>
+                <div class="box">
+                    <a href="#" name="system"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-shequ"></i>企业系统</div>
+                    </div>
+                    <div>
+                        <a target="_blank" href=" http://www.zhyle.com/">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/yinlong.svg" alt="ERP"> 银隆官网</div>
+                                <div class="desc">银隆官网</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://oa.yinlong.com/YLNew/index.html">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/yinlonginner.svg" alt="ERP"> 银隆内部官网</div>
+                                <div class="desc">银隆内部官网</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://erp.yinlong.com:8001">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/erp.svg" alt="ERP"> ERP-正式系统</div>
+                                <div class="desc">Oracle ERP系统</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://plm.yinlong.com/Windchill/">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/plm.svg" alt="PLM系统"> PLM</div>
+                                <div class="desc">图纸、设计</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://oa.yinlong.com/jeesite">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/qianshen.svg" alt="电子签审"> 电子签审</div>
+                                <div class="desc">OA协同办公系统</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://172.25.31.228:8080/eassso/login?_flowId=login-webflow&service=http%3A%2F%2F172.25.31.228%3A8080%2Fshr%2F">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/jindie.svg" alt="金蝶EAS"> 金蝶EAS</div>
+                                <div class="desc">员工信息管理</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://172.25.31.194:8075">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/gongzi.svg" alt="工资查询"> 工资查询</div>
+                                <div class="desc">工资查询</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://192.168.2.24/telapp/check.aspx">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/phone.svg" alt="电话查询系统"> 电话查询系统</div>
+                                <div class="desc">集团电话查询系统</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://192.168.2.24/telapp/login.aspx">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/phonetest.svg" alt="电话维护系统"> 电话维护系统</div>
+                                <div class="desc">电话维护系统</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://172.25.31.129:8888/login">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/erp.svg" alt="银隆大数据平台"> 银隆大数据平台</div>
+                                <div class="desc">大数据平台、分析、汇总</div>
+                            </div>
+                        </a>
+                        <!-- <a target="_blank" href="http://172.25.31.129/wiki/doku.php">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/wiki.svg" alt="银隆信息部WIKI"> 银隆信息部WIKI</div>
+                                <div class="desc">银隆信息部WIKI</div>
+                            </div>
+                        </a> -->
+                        <a target="_blank" href=" http://172.25.31.231:8080/manage/login/index">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/wiki.svg" alt="银隆合同管理系统"> 银隆合同管理系统</div>
+                                <div class="desc">银隆合同管理系统</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://172.16.0.12:8080/PlantOperations/ShopOperations.jnlp">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/car.svg" alt="整车MES系统"> 整车MES系统</div>
+                                <div class="desc">整车生产过程监控系统</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://172.16.0.12:8080/PlantOperations/ProcessDesigner.jnlp">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/dianchi.svg" alt="电池MES系统"> 电池MES系统</div>
+                                <div class="desc">电池生产过程监控系统</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://search.yinlong.com/#/search/app/index">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/search.svg" alt="技术资料搜索平台"> 技术资料搜索</div>
+                                <div class="desc">技术资料搜索系统</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://192.168.2.45/#/">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/anysharered.svg" alt="爱数文件共享系统"> 爱数文件共享系统</div>
+                                <div class="desc">爱数文件共享系统</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://172.16.0.14:8081/YinLongAUTOMobile/">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/yinlongkanban.svg" alt="银隆新能源整车看板系统"> 整车看板系统</div>
+                                <div class="desc">银隆新能源整车看板系统</div>
+                            </div>
+                        </a>
+                        <!-- <a target="_blank" href="http://workcard.yinlong.com:8088/login/">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/xietong.svg" alt="银隆上岗证"> 上岗证管理系统</div>
+                                <div class="desc">上岗证管理系统</div>
+                            </div>
+                        </a> -->
+
+                        <!-- <a target="_blank" href="#">
+                            <div class="item">
+                                <div class="logo"><img src="../website/img/fastmsg.svg" alt="fastmsg"> fastmsg软件</div>
+                                <div class="desc">fastmsg软件下载位置</div>
+                            </div>
+                        </a> -->
+                    </div>
+                </div>
+
+
+                <!-- 测试系统 -->
+                <div class="box">
+                    <a href="#" name="systemTest"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-shequ"></i>测试系统</div>
+                    </div>
+
+                    <a target="_blank" href="http://erpcs.yinlong.com:8011">
+                        <div class="item">
+                            <div class="logo"><img src="../website/img/erp1.svg" alt="8011">ERP - 8011</div>
+                            <div class="desc">
+                                <div class="info">
+                                    ERP - 测试系统 8011
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="http://erpcs.yinlong.com:8041">
+                        <div class="item">
+                            <div class="logo"><img src="../website/img/erp1.svg" alt="8041">ERP - 8041</div>
+                            <div class="desc">
+                                <div class="info">
+                                    ERP - 测试系统 8041
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="http://erpcs.yinlong.com:8021">
+                        <div class="item">
+                            <div class="logo"><img src="../website/img/erp1.svg" alt=" ">  ERP - 8021</div>
+                            <div class="desc">
+                                <div class="info">
+                                    ERP - 测试系统 8021
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="http://172.25.19.101:8080/jeesite/a/login;JSESSIONID=9d5caabed30c48f5939a87ceb46c3d90">
+                        <div class="item">
+                            <div class="logo"><img src="../website/img/dianziqianshen.svg" alt="101">电子签审 - 101</div>
+                            <div class="desc">
+                                <div class="info">
+                                    电子签审测试系统 - 101
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="http://172.25.19.172:8080/jeesite/a/login;JSESSIONID=8beba9fce574486284fcd2c83dc877de">
+                        <div class="item">
+                            <div class="logo"><img src="../website/img/xietong.svg" alt="172">  电子签审 - 172</div>
+                            <div class="desc">
+                                <div class="info">
+                                    电子签审测试系统 - 172
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="http://172.25.19.59:8888/index">
+                        <div class="item">
+                            <div class="logo"><img src="../website/img/erp.svg" alt="date">  大数据平台测试</div>
+                            <div class="desc">
+                                <div class="info">
+                                    大数据平台测试系统
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a target="_blank" href="#">
+                        <div class="item">
+                            <div class="logo"><img src="../website/img/car.svg" alt="整车MES测试系统"> 整车MES测试系统</div>
+                            <div class="desc">整车生产过程监控系统测试</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="#">
+                        <div class="item">
+                            <div class="logo"><img src="../website/img/dianchi.svg" alt="电池MES测试系统"> 电池MES测试系统</div>
+                            <div class="desc">电池生产过程监控系统测试</div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!--培训计划 -->
+            <div class="box">
+                <a href="#" name="pxjh"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-shequ"></i>培训计划</div>
+                </div>
+
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/01、培训计划/部门新员工二级培训.xlsx">
+
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/peixun.svg" alt="new man"> 新员工</div>
+                        <div class="desc">
+                            <div class="info">
+                                普通新员工培训计划
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/14、员工培养/实习生/实习生培养方案.xlsx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/peixun1.svg" alt="born man"> 实习生员工</div>
+                        <div class="desc">
+                            <div class="info">
+                                实习生员工培训计划
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/01、培训计划/应届大学生培训计划.xlsx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/peixun2.svg" alt="student"> 应届大学生</div>
+                        <div class="desc">
+                            <div class="info">
+                                应届大学生培训计划
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--公司管理制度 -->
+            <div class="box">
+                <a href="#" name="gsgl"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-shequ"></i>公司管理制度</div>
+                </div>
+
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/生产管理科/2、部门管理规定/YLSG0001.12-01生产计划部员工行为规范及激励管理办法.rar">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/laodongjilv.svg" alt=" "> 员工劳动纪律</div>
+                        <div class="desc">
+                            <div class="info">
+                                需要遵守的劳动记录
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/生产管理科/2、部门管理规定/QZ0300 03-01 生产计划部岗位职责 .docx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/bumengangwei.svg" alt=" "> 部门岗位职责</div>
+                        <div class="desc">
+                            <div class="info">
+                                部门岗位职责
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://总部企管管理体系文件/QG公司管理制度">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/guanli.svg" alt=" "> 公司管理制度</div>
+                        <div class="desc">
+                            <div class="info">
+                                公司管理制度
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--部门管理制度 -->
+            <div class="box">
+                <a href="#" name="gsgl"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-shequ"></i>部门管理制度</div>
+                </div>
+
+
+                <!-- <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/03、部门管理制度/QZ0300.03-01 生产计划部岗位工作标准.pdf">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/guanli.svg" alt=" "> 积分制考评管理</div>
+                        <div class="desc">
+                            <div class="info">
+                                积分制考评管理
+                            </div>
+                        </div>
+                    </div>
+                </a> -->
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/03、部门管理制度/(2010)FA-002 关于生产计划部实施积分制管理的方案.pdf">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/guanli.svg" alt=" "> 积分制考评管理</div>
+                        <div class="desc">
+                            <div class="info">
+                                积分制考评管理
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/生产管理科/2、部门管理规定/YLSG0001.06-01生产计划部5S管理办法.zip">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/xianchangguanli.svg" alt=" "> 5S管理</div>
+                        <div class="desc">
+                            <div class="info">
+                                5S管理办法
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/03、部门管理制度/值日安排.png">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/xianchangguanli.svg" alt=" "> 值日安排</div>
+                        <div class="desc">
+                            <div class="info">
+                                部门值日安排
+                            </div>
+                        </div>
+                    </div>
+                </a> -->
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/03、部门管理制度/提案改善管理办法宣贯学习资料.docx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/guanli.svg" alt=" "> 提案改善管理</div>
+                        <div class="desc">
+                            <div class="info">
+                                提案改善管理办法
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/15、补充培训/关于各版块流程沟通问题梳理汇总表 .xlsx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/liucheng.svg" alt=" "> 流程管理</div>
+                        <div class="desc">
+                            <div class="info">
+                                部门主要工作流程
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- <a target="_blank" href="http://erpcs.yinlong.com: ">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/gangwei.svg" alt=" "> 岗位职责</div>
+                        <div class="desc">
+                            <div class="info">
+                                部门各岗位职责
+                            </div>
+                        </div>
+                    </div>
+                </a> -->
+            </div>
+
+            <!--需知需会 -->
+            <div class="box">
+                <a href="#" name="xzxh"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-shequ"></i>需知需会</div>
+                </div>
+
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/04、需知需会/金蝶HR考勤员工自助（实习生无需自助考勤）.docx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/jindie.svg" alt=" "> 金蝶考勤</div>
+                        <div class="desc">
+                            <div class="info">
+                                金蝶系统自助考勤
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/04、需知需会/爱数系统使用教程">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/anyshare.svg" alt=" "> 爱数系统</div>
+                        <div class="desc">
+                            <div class="info">
+                                爱数系统使用教程
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/04、需知需会/新员工入职培训课件.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/peixun1.svg" alt=" "> 新员工入职培训课件</div>
+                        <div class="desc">
+                            <div class="info">
+                                新员工入职培训课件
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/04、需知需会/新入职员工应知应会的相关事宜.docx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/peixun2.svg" alt=" "> 新员工应知文档</div>
+                        <div class="desc">
+                            <div class="info">
+                                新员工应知文档
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/04、需知需会/8大浪费培训篇.ppt">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/peixun3.svg" alt=" "> 八大浪费</div>
+                        <div class="desc">
+                            <div class="info">
+                                八大浪费
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/生产管理科/7、各类通知、通报等文件编辑模板">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/sushe.svg" alt=" "> 通知、通报等文件编辑模板</div>
+                        <div class="desc">
+                            <div class="info">
+                                各类通知、通报等文件编辑模板
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--考勤管理 -->
+            <div class="box">
+                <a href="#" name="kq"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-shequ"></i>考勤管理</div>
+                </div>
+
+                <a target="_blank" href="http://172.25.31.228:8080/eassso/login?service=http%3A%2F%2F172.25.31.228%3A8080%2Fshr%2F">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/kaoqin.svg" alt=" "> 补签卡</div>
+                        <div class="desc">
+                            <div class="info">
+                                漏打卡补卡
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="http://172.25.31.228:8080/eassso/login?service=http%3A%2F%2F172.25.31.228%3A8080%2Fshr%2F">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/jiaban.svg" alt=" "> 加班请假</div>
+                        <div class="desc">
+                            <div class="info">
+                                加班申请单，请假生清单及请假流程
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--常用软件操作 -->
+            <div class="box">
+                <a href="#" name="cyrj"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-shequ"></i>常用软件操作</div>
+                </div>
+
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/邮箱配置">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/youxiang1.svg" alt=" "> 邮箱</div>
+                        <div class="desc">
+                            <div class="info">
+                                Outlook邮箱基本操作
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/MES操作手册">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/wenjian.svg" alt=" "> MES系统</div>
+                        <div class="desc">
+                            <div class="info">
+                                爱数共享文档的系统操作
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/电子签审系统培训.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/dianziqianshen.svg" alt=" "> 电子签审系统</div>
+                        <div class="desc">
+                            <div class="info">
+                                电子签审系统主要表单的系统操作
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/在IE浏览器设置ERP系统.docx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/dianziqianshen.svg" alt=" "> 在IE浏览器设置ERP系统</div>
+                        <div class="desc">
+                            <div class="info">
+                                在IE浏览器设置ERP系统
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- <a target="_blank" href="http://192.168.2.24/telapp/login.aspx ">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/phone.svg" alt=" "> 电话查询系统</div>
+                        <div class="desc">
+                            <div class="info">
+                                电话查询系统的基本使用
+                            </div>
+                        </div>
+                    </div>
+                </a> -->
+            </div>
+
+            <!--安全培训 -->
+            <div class="box">
+                <a href="#" name="aq"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-shequ"></i>安全培训</div>
+                </div>
+
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/07、安全培训/消防安全.ppt">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/xiaofanganquan.svg" alt=" "> 消防安全</div>
+                        <div class="desc">
+                            <div class="info">
+                                消防安全
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/07、安全培训/2019年五一节前安全培训.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/anquan2.svg" alt=" "> 现场安全</div>
+                        <div class="desc">
+                            <div class="info">
+                                现场安全
+                            </div>
+                        </div>
+                    </div>
+                </a> -->
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/11、月度培训/9.25节前安全培训/节前安全培训.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/anquan1.svg" alt=" "> 节前安全</div>
+                        <div class="desc">
+                            <div class="info">
+                                节前安全
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+<!--常用软件操作 -->
+            <div class="box">
+                <a href="#" name="cyrj"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-shequ"></i>常用软件操作</div>
+                </div>
+
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/邮箱配置">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/youxiang1.svg" alt=" "> 邮箱</div>
+                        <div class="desc">
+                            <div class="info">
+                                Outlook邮箱基本操作
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/MES操作手册">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/wenjian.svg" alt=" "> MES系统</div>
+                        <div class="desc">
+                            <div class="info">
+                                爱数共享文档的系统操作
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/电子签审系统培训.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/dianziqianshen.svg" alt=" "> 电子签审系统</div>
+                        <div class="desc">
+                            <div class="info">
+                                电子签审系统主要表单的系统操作
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/在IE浏览器设置ERP系统.docx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/dianziqianshen.svg" alt=" "> 在IE浏览器设置ERP系统</div>
+                        <div class="desc">
+                            <div class="info">
+                                在IE浏览器设置ERP系统
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- <a target="_blank" href="http://192.168.2.24/telapp/login.aspx ">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/phone.svg" alt=" "> 电话查询系统</div>
+                        <div class="desc">
+                            <div class="info">
+                                电话查询系统的基本使用
+                            </div>
+                        </div>
+                    </div>
+                </a> -->
+            </div>
+
+            <!--安全培训 -->
+            <div class="box">
+                <a href="#" name="aq"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-shequ"></i>安全培训</div>
+                </div>
+
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/07、安全培训/消防安全.ppt">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/xiaofanganquan.svg" alt=" "> 消防安全</div>
+                        <div class="desc">
+                            <div class="info">
+                                消防安全
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/07、安全培训/2019年五一节前安全培训.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/anquan2.svg" alt=" "> 现场安全</div>
+                        <div class="desc">
+                            <div class="info">
+                                现场安全
+                            </div>
+                        </div>
+                    </div>
+                </a> -->
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/11、月度培训/9.25节前安全培训/节前安全培训.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/anquan1.svg" alt=" "> 节前安全</div>
+                        <div class="desc">
+                            <div class="info">
+                                节前安全
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--常用软件操作 -->
+            <div class="box">
+                <a href="#" name="cyrj"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-shequ"></i>常用软件操作</div>
+                </div>
+
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/邮箱配置">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/youxiang1.svg" alt=" "> 邮箱</div>
+                        <div class="desc">
+                            <div class="info">
+                                Outlook邮箱基本操作
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/MES操作手册">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/wenjian.svg" alt=" "> MES系统</div>
+                        <div class="desc">
+                            <div class="info">
+                                爱数共享文档的系统操作
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/电子签审系统培训.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/dianziqianshen.svg" alt=" "> 电子签审系统</div>
+                        <div class="desc">
+                            <div class="info">
+                                电子签审系统主要表单的系统操作
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/在IE浏览器设置ERP系统.docx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/dianziqianshen.svg" alt=" "> 在IE浏览器设置ERP系统</div>
+                        <div class="desc">
+                            <div class="info">
+                                在IE浏览器设置ERP系统
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--产品简介 -->
+            <div class="box">
+                <a href="#" name="cp"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-shequ"></i>产品简介</div>
+                </div>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/编码培训.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 整车产品</div>
+                        <div class="desc">
+                            <div class="info">
+                                整车产品
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/项目编号规则及订单下发操作.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 电芯产品</div>
+                        <div class="desc">
+                            <div class="info">
+                                电芯产品
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/项目编号规则及订单下发操作.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 集装箱储能</div>
+                        <div class="desc">
+                            <div class="info">
+                                集装箱储能
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/项目编号规则及订单下发操作.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> PACK产品</div>
+                        <div class="desc">
+                            <div class="info">
+                                PACK产品
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/项目编号规则及订单下发操作.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 充电机产品</div>
+                        <div class="desc">
+                            <div class="info">
+                                充电机产品
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/项目编号规则及订单下发操作.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 专用车产品</div>
+                        <div class="desc">
+                            <div class="info">
+                                专用车产品
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/项目编号规则及订单下发操作.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 试制产品</div>
+                        <div class="desc">
+                            <div class="info">
+                                试制产品
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/项目编号规则及订单下发操作.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 模组产品</div>
+                        <div class="desc">
+                            <div class="info">
+                                模组产品
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/项目编号规则及订单下发操作.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> PDU产品</div>
+                        <div class="desc">
+                            <div class="info">
+                                PDU产品
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--编码培训 -->
+            <div class="box">
+                <a href="#" name="bm"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-shequ"></i>编码培训</div>
+                </div>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/编码培训.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 编码培训</div>
+                        <div class="desc">
+                            <div class="info">
+                                物料编码规则 组织编码关系 物料描述规范
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/项目编号规则及订单下发操作.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 订单项目编号编码规则</div>
+                        <div class="desc">
+                            <div class="info">
+                                订单项目编号编码规则及订单下发图解
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--管理培训 -->
+            <div class="box">
+                <a href="#" name="gl"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-shequ"></i>管理规范</div>
+                </div>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/编码培训.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 订单管理</div>
+                        <div class="desc">
+                            <div class="info">
+                                订单管理
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/项目编号规则及订单下发操作.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 流程管理</div>
+                        <div class="desc">
+                            <div class="info">
+                                流程管理
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/项目编号规则及订单下发操作.ppt">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/xiaofanganquan.svg" alt=" "> 文件管理</div>
+                        <div class="desc">
+                            <div class="info">
+                                文件管理
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/11、月度培训/9.25节前安全培训/节前安全培训.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/anquan1.svg" alt=" "> 数据管理</div>
+                        <div class="desc">
+                            <div class="info">
+                                数据管理
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/11、月度培训/9.25节前安全培训/节前安全培训.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/anquan1.svg" alt=" "> 通报管理</div>
+                        <div class="desc">
+                            <div class="info">
+                                通报管理
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            
+            <!--系统操作培训 -->
+            <div class="box">
+                <a href="#" name="xtcz"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-shequ"></i>系统操作培训</div>
+                </div>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/电子签审/系统权限申请.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/xitong.svg" alt=" "> 系统权限申请</div>
+                        <div class="desc">
+                            <div class="info">
+                                系统权限在电子签审提单申请
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> ERP系统</div>
+                        <div class="desc">
+                            <div class="info">
+                                ERP系统环境配置、知识与操作
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/MES">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/mes.svg" alt=" "> MES系统</div>
+                        <div class="desc">
+                            <div class="info">
+                                MES系统环境配置、知识与操作
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/大数据平台/大数据系统功能基础操作指导.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/data.svg" alt=" "> 大数据系统功能基础操作指导</div>
+                        <div class="desc">
+                            <div class="info">
+                                大数据系统功能基础操作指导
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/ERP操作知识100问.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> ERP操作知识100问</div>
+                        <div class="desc">
+                            <div class="info">
+                                ERP操作知识100问
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/Yinlong_ERP_TRN_SCP客户化操作培训.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> Yinlong_ERP_TRN_SCP客户化操作培训</div>
+                        <div class="desc">
+                            <div class="info">
+                                Yinlong_ERP_TRN_SCP客户化操作培训
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/Yinlong_ERP_TRN_WIP客户化功能培训.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> Yinlong_ERP_TRN_WIP客户化功能培训</div>
+                        <div class="desc">
+                            <div class="info">
+                                Yinlong_ERP_TRN_WIP客户化功能培训
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/Yinlong_ERP_TRN_MRP计划标准功能培训.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> Yinlong_ERP_TRN_MRP计划标准功能培训</div>
+                        <div class="desc">
+                            <div class="info">
+                                Yinlong_ERP_TRN_MRP计划标准功能培训
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/生产计划部ERP基本操作.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 生产计划部ERP基本操作</div>
+                        <div class="desc">
+                            <div class="info">
+                                生产计划部ERP基本操作
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/受托加工流程.pptx">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 受托加工流程</div>
+                        <div class="desc">
+                            <div class="info">
+                                受托加工流程
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/附件1：Yinlong_A_PR零星类物料申购操作手册.doc">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 附件1：Yinlong_A_PR零星类物料申购操作手册.doc</div>
+                        <div class="desc">
+                            <div class="info">
+                                附件1：Yinlong_A_PR零星类物料申购操作手册.doc
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/ERP系统物料齐套项目管理平台系统操作指导.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 物料齐套项目管理平台系统操作指导</div>
+                        <div class="desc">
+                            <div class="info">
+                                ERP系统物料齐套项目管理平台系统操作
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/ERP系统项目管理—物料齐套管理.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> ERP系统项目管理—物料齐套管理</div>
+                        <div class="desc">
+                            <div class="info">
+                                ERP系统项目管理—物料齐套管理
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/采购订单查询.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 采购订单查询</div>
+                        <div class="desc">
+                            <div class="info">
+                                采购订单查询
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/查看PMC下发采购申请.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 查看PMC下发采购申请</div>
+                        <div class="desc">
+                            <div class="info">
+                                查看PMC下发采购申请
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/查看物料事物处理-仓库.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 查看物料事物处理-仓库</div>
+                        <div class="desc">
+                            <div class="info">
+                                查看物料事物处理-仓库
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/查看物料事物处理-物料.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 查看物料事物处理-物料</div>
+                        <div class="desc">
+                            <div class="info">
+                                查看物料事物处理-物料
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/查询生产进度.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 查询生产进度</div>
+                        <div class="desc">
+                            <div class="info">
+                                查询生产进度
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/查询与导出物料BOM清单.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 查询与导出物料BOM清单</div>
+                        <div class="desc">
+                            <div class="info">
+                                查询与导出物料BOM清单
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/车间多项业务查询.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 车间多项业务查询</div>
+                        <div class="desc">
+                            <div class="info">
+                                车间多项业务查询
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/工艺路线查询.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 工艺路线查询</div>
+                        <div class="desc">
+                            <div class="info">
+                                工艺路线查询
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/库存现有量查询—仓库.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 库存现有量查询—仓库</div>
+                        <div class="desc">
+                            <div class="info">
+                                库存现有量查询—仓库
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/库存现有量查询—物料.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 库存现有量查询—物料</div>
+                        <div class="desc">
+                            <div class="info">
+                                库存现有量查询—物料
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/物料用途查询.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 物料用途查询</div>
+                        <div class="desc">
+                            <div class="info">
+                                物料用途查询
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/项目编号查询.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 项目编号查询</div>
+                        <div class="desc">
+                            <div class="info">
+                                项目编号查询
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/车间多项业务查询.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 车间多项业务查询</div>
+                        <div class="desc">
+                            <div class="info">
+                                车间多项业务查询
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/项目管理—物料齐套查询与导出.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 项目管理—物料齐套查询与导出</div>
+                        <div class="desc">
+                            <div class="info">
+                                项目管理—物料齐套查询与导出
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/08、系统操作培训/系统应用培训/ERP/项目号查找成品编码及工单.wmv">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> 项目号查找成品编码及工单</div>
+                        <div class="desc">
+                            <div class="info">
+                                项目号查找成品编码及工单
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- <a target="_blank" href="AnyShare://银隆集团生产计划部/培训管理/website/px.html">
+                    <div class="item">
+                        <div class="logo"><img src="../website/img/erp.svg" alt=" "> px</div>
+                        <div class="desc">
+                            <div class="info">
+                                px
+                            </div>
+                        </div>
+                    </div>
+                </a> -->
+            </div>
+            <footer class="footer">
+                <div class="copyright">
+                    <div>
+                        Copyright ? 2020 - 2021
+                        <a href="mailto:bytely@qq.com">ly</a>
+                    </div>
+                </div>
+            </footer>
+            <div id="fixedBar">
+                <svg class="Zi Zi&#45;&#45;BackToTop" title="回到顶部" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M16.036 19.59a1 1 0 0 1-.997.995H9.032a.996.996 0 0 1-.997-.996v-7.005H5.03c-1.1 0-1.36-.633-.578-1.416L11.33 4.29a1.003 1.003 0 0 1 1.412 0l6.878 6.88c.782.78.523 1.415-.58 1.415h-3.004v7.005z"></path>
+                </svg>
+            </div>
+    </div>
+    </section>
+    <script src="../website/js/jquery-3.2.1.min.js"></script>
+    <script src="../website/js/index.js"></script>
+    <script>
+        var oMenu = document.getElementById('menu');
+        var oLeftBar = document.getElementById('leftBar');
+        var menuFrom = document.getElementById('menu-form');
+
+        oMenu.onclick = function() {
+            if (oLeftBar.offsetLeft == 0) {
+                oLeftBar.style.left = -249 + 'px';
+            } else {
+                oLeftBar.style.left = 0;
+            }
+        }
+
+        function wenjian() {
+            var cmd = new ActiveXObject('WScript.Shell');
+            cmd.Run('#');
+        }
+
+
+
+
+        // 监听页面宽度变化
+        window.onresize = function() {
+            judgeWidth();
+            // console.log(document.documentElement.clientWidth);
+        };
+
+        // 判断页面宽度
+        function judgeWidth() {
+            if (document.documentElement.clientWidth > 481) {
+                oLeftBar.style.left = 0;
+            } else {
+                oLeftBar.style.left = -249 + 'px';
+            }
+        }
+
+
+        var oNavItem = document.getElementById('navItem');
+        var aA = oNavItem.getElementsByTagName('a');
+        for (var i = 0; i < aA.length; i++) {
+            aA[i].onclick = function() {
+                for (var j = 0; j < aA.length; j++) {
+                    aA[j].className = '';
+                }
+                this.className = 'active';
+                if (oLeftBar.offsetLeft == 0) {
+                    if (document.documentElement.clientWidth <= 481) {
+                        oLeftBar.style.left = -249 + 'px';
+                        menuFrom.checked = false;
+
+                    }
+                }
+            }
+        }
+
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= 200) {
+                $('#fixedBar').fadeIn(300);
+            } else {
+                $('#fixedBar').fadeOut(300);
+            }
+        });
+        $('#fixedBar').click(function() {
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 800);
+        })
+    </script>
+    </div>
+</body>
+
+</html>
