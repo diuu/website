@@ -4,11 +4,11 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <title>生产计划看板首页</title>
+    <title>K线</title>
     <link
       rel="stylesheet"
       type="text/css"
-      href="./生产计划看板首页_files/selectImg.css"
+      href="css/kanban.css"
     />
     <script src="./生产计划看板首页_files/jquery-1.10.2.min.js.下载"></script>
     <link
@@ -38,11 +38,12 @@
       }
     </style>
   </head>
-  <body style="">
+  <body>
     <div class="selectImgDiv" id="selectItemDiv">
+      <div> 鱿鱼币 </div>
       <div class="item">
         <div class="img_show">
-          <iframe
+          <iframe style="height: 300px; width: 770px;"
             id="OrderPlanCompletionContent"
             src="https://poocoin.app/tokens/0x87230146e138d3f296a9a77e497a2a83012e9bc5"
           ></iframe>
@@ -52,7 +53,7 @@
           class="img_title"
           onclick="selectBoard(this)"
         >
-          车辆上线下线
+          haha
         </div>
       </div>
 
@@ -80,9 +81,6 @@
           ></iframe>
         </div>
         <div id="PmcShopMonitor" class="img_title" onclick="selectBoard(this)">
-          生产计划看板
-        </div>
-      </div>
     </div>
 
     <script type="text/javascript">
