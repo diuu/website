@@ -1,9 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
 <html>
 <head>
-<title>html5写的3D逼真圣诞树效果</title>
+<title>Merry Christmas</title>
 <meta charset="utf-8" >
+<link rel="stylesheet" href="../website/css/style.css">
 <style>
+
 html, body {
  width: 100%; height: 100%; margin: 0; padding: 0; border: 0; }
 div {
@@ -43,7 +45,7 @@ textarea {
 </style>
 </head>
 <body marginwidth="0" marginheight="0">
-<canvas id="c" height="356" width="446">
+<canvas id="c" height="auto" width="auto">
 <script>
 var collapsed = true;
 function toggle() {
@@ -81,6 +83,21 @@ width=height=k?32:W=446;with(getContext('2d'))if(k>10|!k)for(font='60px Impact',
 A=T(D-11);if(l)return(m[2]-l[2])*A+(l[0]-m[0])*T(D);a.clearRect(0,0,W,W);J.sort(G);for(i=0;L=J[i++];a.drawImage(M[L[3]+1],207+L[0]*A+L[2]*T(D)>>0,L[1]>>1)){
 if(i==2e3)a.fillText('Merry Christmas!',U,350);if(!(i%7))a.drawImage(M[13],((157*(i*i)+T(D*5+i*i)*5)%W)>>0,((113*i+(D*i)/60)%(290+i/99))>>0);}D+=.02},1)
 // end of submission //
+
+// 监听页面宽度变化
+window.onresize = function() {
+            judgeWidth();
+            // console.log(document.documentElement.clientWidth);
+        };
+
+        // 判断页面宽度
+        function judgeWidth() {
+            if (document.documentElement.clientWidth > 500) {
+                oLeftBar.style.left = 0;
+            } else {
+                oLeftBar.style.left = -249 + 'px';
+            }
+        }
 </script>
 </body>
 </html>
