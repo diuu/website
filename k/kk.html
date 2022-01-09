@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>轮播</title>
+    <link rel="stylesheet" href="Swiper\dist\css/swiper.min.css" />
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <iframe
+            src="https://poocoin.app/tokens/0x87230146e138d3f296a9a77e497a2a83012e9bc5"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            scrolling="yes"
+          ></iframe>
+                 
+        </div>
+
+        <!-- <div class="swiper-slide">
+                <iframe src="http://172.16.0.14:8081/YinLongAUTOMobile/PMC/PmcAutoDailyTotal.jsp" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>         </div> -->
+
+        <div class="swiper-slide">
+          <iframe
+            src="https://poocoin.app/tokens/0x87230146e138d3f296a9a77e497a2a83012e9bc5"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+                 
+        </div>
+
+        <!-- <div class="swiper-slide">
+                <iframe src="http://172.16.0.14:8081/YinLongAUTOMobile/PMC/ProductionTroubleInfo.jsp" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>         </div> -->
+
+        <div class="swiper-slide">
+          <iframe
+            src="https://poocoin.app/tokens/0x87230146e138d3f296a9a77e497a2a83012e9bc5"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+                 
+        </div>
+      </div>
+
+      <!-- 如果需要分页器 -->
+
+      <div class="swiper-pagination"></div>
+
+      <!-- 如果需要导航按钮 -->
+      <!-- 
+        <div class="swiper-button-prev"></div>
+
+        <div class="swiper-button-next"></div> -->
+
+      <!-- 如果需要滚动条 -->
+
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+    <script type="text/javascript" src="Swiper\dist\js/swiper.min.js"></script>
+
+    <script>
+      //         var mySwiper = new Swiper('.swiper-container', {
+      //             direction: 'horizontal',
+      //             //          loop: true,
+      //                                // 如果需要分页器
+      //              autoplay: 30,
+      //                        pagination: {
+      //                 el: '.swiper-pagination',
+      //
+      //             },
+      //                                 // 如果需要前进后退按钮
+      //                      navigation: {
+      //                 nextEl: '.swiper-button-next',
+      //                            prevEl: '.swiper-button-prev',
+      //
+      //             },
+      //                                // 如果需要滚动条
+      //
+      //             /*  scrollbar: {
+      //               el: '.swiper-scrollbar',
+      //               hide:true
+      //             },  */
+      //
+      //         })
+      window.onload = function () {
+        var mySwiper = new Swiper(".swiper-container", {
+          // 轮播图的方向，也可以是vertical方向
+          direction: "horizontal",
+          //播放速度
+          loop: true,
+          // 自动播放时间
+          autoplay: {
+            delay: 10000, // 3秒切换一次
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+          },
+          // 播放的速度
+          speed: 1000,
+          // 如果需要分页器，即下面的小圆点
+          pagination: ".swiper-pagination",
+          // 滑动之后， 定时器也不会被清除
+          autoplayDisableOnInteraction: false,
+        });
+      };
+
+      // function lunBoFun() {
+
+      //     iframea.href = arrHref[num];
+
+      //     oImg.src = arrSrc[num];
+
+      //     oText1.innerHTML = num + 1 + "/" + arrSrc.length;
+
+      //     oText2.innerHTML = arrTxt[num];
+      // }
+
+      // SliderInit();
+
+      // oPrev.onclick = function() {
+
+      //     num--;
+
+      //     if (num == -1) {
+
+      //         num = arrSrc.length - 1;
+
+      //     }
+
+      //     lunBoFun();
+
+      // };
+
+      // oNext.onclick = function() {
+
+      //     num++;
+
+      //     if (num == arrTxt.length) {
+
+      //         num = 0;
+
+      //     }
+
+      //     lunBoFun();
+
+      // }
+
+      // function SliderInit() {
+
+      //     lunBoFun();
+
+      //     setInterval(function() {
+
+      //         num++;
+
+      //         if (num == arrSrc.length) {
+
+      //             num = 0;
+
+      //         }
+
+      //         lunBoFun();
+
+      //     }, 500);
+
+      // }
+    </script>
+  </body>
+</html>
